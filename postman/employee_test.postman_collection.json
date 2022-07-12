@@ -1,0 +1,333 @@
+{
+	"info": {
+		"_postman_id": "cbf273f4-4dff-4586-8b5e-96d6aa4a8069",
+		"name": "employee_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "showallEmployees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NTc2NDQ2NzAsImV4cCI6MTY1NzY0ODI3MCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYXBpX3VzZXIifQ.DqPhvr88Hw_tqKOvXbqz6d5Eea7DYT5u1coTZJV9tuf59JtB-G1gN_zdkWnGSFgTNYXjMJFa9zzDQ4FNZDOnqBDMOpkg7rIG2oovdxtwi4jwW8kkhJLAxDeYuywv6_Xeu7awpg9dOcnfxNr7V8hTJ-0out0dIRowfBmNvyEkYAa_Hil_EUjTOYD5XRn2XikT1O1jpyHkUwIok4OfLevcXLQuMQfJ9s17VyKthxk13H-V8xBmsTg6bsu0-JJYuArVw8AiejhohAyLRo1ZnHSg8xafyOWINm2DQpE9nAlL2mNT9ioI6RVCax9tubdFWq5YorQ23khlpcVKnnB5GH8KGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://youwe-symfony-coding-challenge.ddev.site/employees?page=1",
+					"protocol": "http",
+					"host": [
+						"youwe-symfony-coding-challenge",
+						"ddev",
+						"site"
+					],
+					"path": [
+						"employees"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showAllYouweTeams",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NTc2NDQ2NzAsImV4cCI6MTY1NzY0ODI3MCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYXBpX3VzZXIifQ.DqPhvr88Hw_tqKOvXbqz6d5Eea7DYT5u1coTZJV9tuf59JtB-G1gN_zdkWnGSFgTNYXjMJFa9zzDQ4FNZDOnqBDMOpkg7rIG2oovdxtwi4jwW8kkhJLAxDeYuywv6_Xeu7awpg9dOcnfxNr7V8hTJ-0out0dIRowfBmNvyEkYAa_Hil_EUjTOYD5XRn2XikT1O1jpyHkUwIok4OfLevcXLQuMQfJ9s17VyKthxk13H-V8xBmsTg6bsu0-JJYuArVw8AiejhohAyLRo1ZnHSg8xafyOWINm2DQpE9nAlL2mNT9ioI6RVCax9tubdFWq5YorQ23khlpcVKnnB5GH8KGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://youwe-symfony-coding-challenge.ddev.site/youwe_teams?page=1",
+					"protocol": "http",
+					"host": [
+						"youwe-symfony-coding-challenge",
+						"ddev",
+						"site"
+					],
+					"path": [
+						"youwe_teams"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showSingleYouweTeam",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NTc2NDQ2NzAsImV4cCI6MTY1NzY0ODI3MCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYXBpX3VzZXIifQ.DqPhvr88Hw_tqKOvXbqz6d5Eea7DYT5u1coTZJV9tuf59JtB-G1gN_zdkWnGSFgTNYXjMJFa9zzDQ4FNZDOnqBDMOpkg7rIG2oovdxtwi4jwW8kkhJLAxDeYuywv6_Xeu7awpg9dOcnfxNr7V8hTJ-0out0dIRowfBmNvyEkYAa_Hil_EUjTOYD5XRn2XikT1O1jpyHkUwIok4OfLevcXLQuMQfJ9s17VyKthxk13H-V8xBmsTg6bsu0-JJYuArVw8AiejhohAyLRo1ZnHSg8xafyOWINm2DQpE9nAlL2mNT9ioI6RVCax9tubdFWq5YorQ23khlpcVKnnB5GH8KGQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://youwe-symfony-coding-challenge.ddev.site/youwe_team/122ffa9e-3439-414b-be8a-5abd3f05007c",
+					"protocol": "http",
+					"host": [
+						"youwe-symfony-coding-challenge",
+						"ddev",
+						"site"
+					],
+					"path": [
+						"youwe_team",
+						"122ffa9e-3439-414b-be8a-5abd3f05007c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generateToken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"api_user\",\"password\":\"api_user\"}"
+				},
+				"url": {
+					"raw": "http://youwe-symfony-coding-challenge.ddev.site/token",
+					"protocol": "http",
+					"host": [
+						"youwe-symfony-coding-challenge",
+						"ddev",
+						"site"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generateAdminToken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"api_admin\",\"password\":\"api_admin\"}"
+				},
+				"url": {
+					"raw": "http://youwe-symfony-coding-challenge.ddev.site/token",
+					"protocol": "http",
+					"host": [
+						"youwe-symfony-coding-challenge",
+						"ddev",
+						"site"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showSingleEmployee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NTc2NTI1MTIsImV4cCI6MTY1NzY1NjExMiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYXBpX3VzZXIifQ.cEL1QUKfpQFYh_uCXWKIMcvdAL60MYi_19KgLIGVWl9NzH5adzz5wHTEDS3sqBQ5MI3A3HO8BWOMpTabZm5LRkLCe0ZCadRgK_YzCo8B6TFRZuuge7L0rodjFrcnk7L2BA8d1DZkNEH9VfsugkM7gGOlxlmTo2RztP3SjnW-AB2bYfI5DifI3jT4pBvYJcio5kpRa8CVrXxdtiNUu-VdnyVP5dezHax8KBm18YLTqSpv16TDHdlXjtHjQZufB_ufE3GehXi3IhtqgQieYP8JU_nZ2U_XB76Ex_nJ7MJs7qVbJhvTeY7SeyBMc_4SN4BAKbP6tRdek6Ip3oBwFpnEHg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://youwe-symfony-coding-challenge.ddev.site/employee/ed2ec84a-be93-4975-9c1c-8f9a838eb49f",
+					"protocol": "http",
+					"host": [
+						"youwe-symfony-coding-challenge",
+						"ddev",
+						"site"
+					],
+					"path": [
+						"employee",
+						"ed2ec84a-be93-4975-9c1c-8f9a838eb49f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteEmployee",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NTc2NTMwMTIsImV4cCI6MTY1NzY1NjYxMiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFwaV9hZG1pbiJ9.Qf_YV3YN5CKP_k608JNSgF315td0a76awGvsflV8-hO8KnwrPS1ya_pKd1xbpl7bMf6Hu7HWFrnRNrudi5xPLHAFxA5XWATvhASG9CqzqPsK3cgm52CluvMHkiLTKK2LDKQMxacL5FJon3kRuJ_NKOnzIeHQDs2bcJ0PVjObkC3zDrLSHxwM7tvQNsPor2YeYImnGDsR4pAgGQIYFgC7LC9JxcN6LDl0oOXQwJ4jl84QphfoRs31s6YSF68L_1GAzDeR2zTRIvqTfX93PkW0LlP5homx6OIUtFvAY6E0jqrbQWCFLEOPMR-mG0kqnEMHa1TZU9xY7b7jICto1eYIMg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://youwe-symfony-coding-challenge.ddev.site/employee/ed2ec84b-be93-4975-9c1c-8f9a838eb49d",
+					"protocol": "http",
+					"host": [
+						"youwe-symfony-coding-challenge",
+						"ddev",
+						"site"
+					],
+					"path": [
+						"employee",
+						"ed2ec84b-be93-4975-9c1c-8f9a838eb49d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NTc2NTM0MjQsImV4cCI6MTY1NzY1NzAyNCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYXBpX3VzZXIifQ.jNk8RDnLQpFOIOInwUdwq-x1CcnBGaDsT4kzskWJKh5YCPSxlnQxnb0vPqM1BAXwCGWbmMbDyF54K2HKJlNUVKdUt60ikOduNyJM6klcdt3MzfXjZ3tudzpUORpX99Uzj_kzHwHmgL6xW91AUoMU6bs_OLl8_Sjo065sS_dVFbnP3JBbdD9quIISPJT70qyDhUfKocNTbfMszMCAtgN_o-g0vPzEfBBtTO4sy5AnLvMRxoJkENoGwH6v-UXY6xJ18DLYGDACCNqsln8n17FXgWIhNDMfEG6_rUfT4zPCvMe-4MLjOj3cEuw5Gj-MEwFfCUAHDF-cleOM9JCVsfT6Og",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"last_name\":\"amr\",\n\"first_name\": \"emad\",\n\"email\":\"samiemamd45@gmail.com\",\n\"youwe_teams\":[\"122ffa9e-3439-414b-be8a-5abd3f05007c\"]}\n\n"
+				},
+				"url": {
+					"raw": "http://youwe-symfony-coding-challenge.ddev.site/employee/ed2ec84b-be93-4975-9c1c-8f9a838eb49d",
+					"protocol": "http",
+					"host": [
+						"youwe-symfony-coding-challenge",
+						"ddev",
+						"site"
+					],
+					"path": [
+						"employee",
+						"ed2ec84b-be93-4975-9c1c-8f9a838eb49d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createEmployee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NTc2NTMyOTMsImV4cCI6MTY1NzY1Njg5Mywicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoiYXBpX3VzZXIifQ.XSdrgGZSh2OGHR-o1Nr6agjEF4h2fbrK3vI7rqLqjYhiBetA2Ov1iqRh1-UE74StCDFTEkZS7NhzHUtP74QzS-lahAEzlOiUVUwazjRMCvELE7h3PS-BbKRjmsZ1cY_eNLnsw23oiM0FXpVLtsO8J3PyPSFN-tBWQG0kLjfP-EodHY9Edaqij5yRw-WWLyJDD9nGovKnVWInkIIAoxwx8zC1C0Z7KfuK-ewUVSs_3_G8MGWy8bZc3eRwiUaHowGkffNSk4-pFIaAzb4kkqLJcz3C5-Cz5U9Z2uPE1jmIsTkDBfdy87L5nNYaYvPX8-h1z-EERA6U9IHGy2K6LifZXQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"last_name\":\"emad\",\n\"first_name\": \"samy\",\n\"email\":\"samyemad4@gmail.com\",\n\"identifier\":\"ed2ec84b-be93-4975-9c1c-8f9a838eb49d\",\n\"youwe_teams\":[\"122ffa9e-3439-414b-be8a-5abd3f05007c\"]}\n\n"
+				},
+				"url": {
+					"raw": "http://youwe-symfony-coding-challenge.ddev.site/employees",
+					"protocol": "http",
+					"host": [
+						"youwe-symfony-coding-challenge",
+						"ddev",
+						"site"
+					],
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
