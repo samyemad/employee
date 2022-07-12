@@ -1,0 +1,22 @@
+{
+    "identifier": "122ffa9e-3439-414b-be8a-5abd3f05007c",
+    "team_name": "Team Sigma",
+    "established_date": "2021-12-01T00:00:00+00:00",
+    "employees": [
+        {
+            "identifier": "ed2ec84a-be93-4975-9c1c-8f9a838eb49f",
+            "first_name": "John",
+            "last_name": "Smith",
+            "email": "j.smith@youweagency.com",
+            "youwe_teams": [
+                "122ffa9e-3439-414b-be8a-5abd3f05007c"
+            ],
+            "_links": {
+                "self": "http:\/\/localhost\/employee\/ed2ec84a-be93-4975-9c1c-8f9a838eb49f"
+            }
+        }
+    ],
+    "_links": {
+        "self": "http:\/\/localhost\/youwe_team\/122ffa9e-3439-414b-be8a-5abd3f05007c"
+    }
+}

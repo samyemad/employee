@@ -1,0 +1,7 @@
+App\Entity\Employee:
+  employee_1:
+    __construct: [ 'ed2ec84a-be93-4975-9c1c-8f9a838eb49f', 'John', 'Smith', 'j.smith@youweagency.com' ]
+  employee_2:
+    __construct: [ '87e852c5-90dd-4411-9342-317df9162eb5', 'Peter', 'Jackson', 'p.jackson@youweagency.com' ]
+  employee_3:
+    __construct: [ '530ef9cb-9b94-4a43-9798-0fdb79c696e4', 'John', 'Johnson', 'j.johnson@youweagency.com' ]

@@ -1,0 +1,5 @@
+App\Entity\YouweTeam:
+  youwe_team_1:
+    __construct: [ '122ffa9e-3439-414b-be8a-5abd3f05007c', 'Team Sigma', <(new \DateTimeImmutable('2021-12-01'))> ]
+    __calls:
+      - addEmployee: [ '@employee_1' ]

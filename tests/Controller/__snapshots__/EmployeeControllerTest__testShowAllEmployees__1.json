@@ -1,0 +1,29 @@
+[
+    {
+        "identifier": "ed2ec84a-be93-4975-9c1c-8f9a838eb49f",
+        "first_name": "John",
+        "last_name": "Smith",
+        "email": "j.smith@youweagency.com",
+        "_links": {
+            "self": "http:\/\/localhost\/employee\/ed2ec84a-be93-4975-9c1c-8f9a838eb49f"
+        }
+    },
+    {
+        "identifier": "87e852c5-90dd-4411-9342-317df9162eb5",
+        "first_name": "Peter",
+        "last_name": "Jackson",
+        "email": "p.jackson@youweagency.com",
+        "_links": {
+            "self": "http:\/\/localhost\/employee\/87e852c5-90dd-4411-9342-317df9162eb5"
+        }
+    },
+    {
+        "identifier": "530ef9cb-9b94-4a43-9798-0fdb79c696e4",
+        "first_name": "John",
+        "last_name": "Johnson",
+        "email": "j.johnson@youweagency.com",
+        "_links": {
+            "self": "http:\/\/localhost\/employee\/530ef9cb-9b94-4a43-9798-0fdb79c696e4"
+        }
+    }
+]

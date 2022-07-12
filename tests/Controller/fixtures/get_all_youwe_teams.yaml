@@ -1,0 +1,9 @@
+App\Entity\YouweTeam:
+  youwe_team_1:
+    __construct: [ '122ffa9e-3439-414b-be8a-5abd3f05007c', 'Team Sigma', <(new \DateTimeImmutable('2021-12-01'))> ]
+  youwe_team_2:
+    __construct: [ 'bd2f440e-8fa9-4db9-aa5c-f210ea816900', 'Team Sirius', <(new \DateTimeImmutable('2020-05-05'))> ]
+  youwe_team_3:
+    __construct: [ 'b23b7cb3-570d-4ccb-8490-ea9c7ba81393', 'Team Panda', <(new \DateTimeImmutable('2019-03-17'))> ]
+  youwe_team_4:
+    __construct: [ 'c6c4cddf-d4fc-4d39-876f-ec3a150d6e58', 'Team Groningen', <(new \DateTimeImmutable('2018-11-11'))> ]

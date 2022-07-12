@@ -1,0 +1,3 @@
+App\Entity\Employee:
+  employee_1:
+    __construct: [ 'ed2ec84a-be93-4975-9c1c-8f9a838eb49f', 'John', 'Smith', 'j.smith@youweagency.com' ]

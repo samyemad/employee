@@ -1,0 +1,27 @@
+{
+    "page": 2,
+    "size": 3,
+    "pages": 2,
+    "total": 4,
+    "_links": {
+        "self": {
+            "href": "http:\/\/localhost\/youwe_teams?page=2&size=3"
+        },
+        "first": {
+            "href": "http:\/\/localhost\/youwe_teams?page=1&size=3"
+        },
+        "last": {
+            "href": "http:\/\/localhost\/youwe_teams?page=2&size=3"
+        }
+    },
+    "rows": [
+        {
+            "identifier": "c6c4cddf-d4fc-4d39-876f-ec3a150d6e58",
+            "team_name": "Team Groningen",
+            "established_date": "2018-11-11T00:00:00+00:00",
+            "_links": {
+                "self": "http:\/\/localhost\/youwe_team\/c6c4cddf-d4fc-4d39-876f-ec3a150d6e58"
+            }
+        }
+    ]
+}

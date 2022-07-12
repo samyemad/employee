@@ -1,0 +1,3 @@
+App\Entity\YouweTeam:
+  youwe_team_1:
+    __construct: [ 'bd2f440e-8fa9-4db9-aa5c-f210ea816900', 'Team Sirius', <(new \DateTimeImmutable('2020-05-05'))> ]

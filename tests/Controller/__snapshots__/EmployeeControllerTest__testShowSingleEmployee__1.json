@@ -1,0 +1,9 @@
+{
+    "identifier": "ed2ec84a-be93-4975-9c1c-8f9a838eb49f",
+    "first_name": "John",
+    "last_name": "Smith",
+    "email": "j.smith@youweagency.com",
+    "_links": {
+        "self": "http:\/\/localhost\/employee\/ed2ec84a-be93-4975-9c1c-8f9a838eb49f"
+    }
+}
