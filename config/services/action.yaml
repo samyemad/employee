@@ -1,0 +1,19 @@
+services:
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+    App\Service\Action\CreateEmployeeAction: ~
+    App\Service\Action\ShowEmployeeAction: ~
+    App\Service\Action\ShowAllEmployeesAction: ~
+    App\Service\Action\DenormalizeCreateEmployeeAction: ~
+    App\Service\Action\UpdateEmployeeAction: ~
+    App\Service\Action\DeleteEmployeeAction: ~
+    App\Service\Action\ShowYouweTeamAction: ~
+    App\Service\Action\ShowAllYouweTeamsAction: ~
+    App\Service\Interfaces\ActionInterface $showEmployeeAction: '@App\Service\Action\ShowEmployeeAction'
+    App\Service\Interfaces\ActionInterface $showAllEmployeesAction: '@App\Service\Action\ShowAllEmployeesAction'
+    App\Service\Interfaces\ActionInterface $createEmployeeAction: '@App\Service\Action\CreateEmployeeAction'
+    App\Service\Interfaces\ActionInterface $denormalizeCreateEmployeeAction: '@App\Service\Action\DenormalizeCreateEmployeeAction'
+    App\Service\Interfaces\ActionInterface $updateEmployeeAction: '@App\Service\Action\UpdateEmployeeAction'
+    App\Service\Interfaces\ActionInterface $deleteEmployeeAction: '@App\Service\Action\DeleteEmployeeAction'
+    App\Service\Interfaces\ActionInterface $showYouweTeamAction: '@App\Service\Action\ShowYouweTeamAction'
+    App\Service\Interfaces\ActionInterface $showAllYouweTeamsAction: '@App\Service\Action\ShowAllYouweTeamsAction'

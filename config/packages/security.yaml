@@ -1,0 +1,40 @@
+security:
+    enable_authenticator_manager: true
+    # https://symfony.com/doc/current/security.html#registering-the-user-hashing-passwords
+    password_hashers:
+        Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface: 'auto'
+    # https://symfony.com/doc/current/security.html#loading-the-user-the-user-provider
+    providers:
+        in_memory:
+            memory:
+                users:
+                    # if you have problems with combinations of api_user/api_user and api_admin/api_admin, create new hashes with bin/console security:hash-password
+                    api_user: { password: '$2y$13$deSVQXpG0SWWAYvHKl038.MzjfzU3SQSsdvtqdxrQS5SQFq/.YyzC', roles: 'ROLE_USER' } # password: api_user
+                    api_admin: { password: '$2y$13$m8zGSnWfB0bcb1BN1WaYse7h.N6QMFTvrbO/8ZamUFtrdEZPbD.mG', roles: 'ROLE_ADMIN' } # password: api_admin
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+        token:
+            stateless: true
+            pattern: ^/token
+            http_basic: true
+            provider: in_memory
+            json_login:
+                check_path: /token
+                success_handler: lexik_jwt_authentication.handler.authentication_success
+                failure_handler: lexik_jwt_authentication.handler.authentication_failure
+#        TODO
+        api:
+            stateless: true
+            pattern: ^/(youwe_team|employee)/*
+            custom_authenticators:
+                - App\Security\JwtTokenAuthenticator
+            entry_point: App\Security\JwtTokenAuthenticator
+
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+        - { path: ^/token, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/(youwe_teams|employees), roles: ROLE_USER }
+        - { path: ^/(employee)/*, roles: ROLE_ADMIN, methods: [DELETE] }

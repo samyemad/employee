@@ -1,0 +1,13 @@
+services:
+    _defaults:
+        autowire: true
+
+    app.listener.employee.created:
+        class: App\EventListener\EmployeeCreatedNotifier
+        tags:
+            - { name: kernel.event_listener, event: app.employee.created, method: notify }
+
+    app.listener.employee.updated:
+        class: App\EventListener\EmployeeUpdatedNotifier
+        tags:
+            - { name: kernel.event_listener, event: app.employee.updated, method: notify }

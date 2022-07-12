@@ -1,0 +1,5 @@
+services:
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+    App\Service\Result\PrepareResult: ~
+    App\Service\Interfaces\PrepareResultInterface: '@App\Service\Result\PrepareResult'

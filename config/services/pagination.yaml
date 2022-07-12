@@ -1,0 +1,10 @@
+services:
+    _defaults:
+        autowire: true
+    App\Service\Pagination\PaginationResult: ~
+
+    App\Service\Interfaces\PaginationResultInterface: '@App\Service\Pagination\PaginationResult'
+
+    App\Service\Pagination\PaginationLinks: ~
+
+    App\Service\Interfaces\PaginationLinksInterface: '@App\Service\Pagination\PaginationLinks'

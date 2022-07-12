@@ -1,0 +1,10 @@
+services:
+    _defaults:
+        autowire: true
+    App\Service\Error\ProcessFormErrors: ~
+
+    App\Service\Interfaces\ProcessFormErrorsInterface: '@App\Service\Error\ProcessFormErrors'
+
+    App\Service\Error\PrepareValidationErrors: ~
+
+    App\Service\Interfaces\PrepareErrorsInterface $prepareValidationErrors: '@App\Service\Error\PrepareValidationErrors'
